@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>MattEqualsCoder.AppImageManager</PackageId>
+        <Version>0.1.0</Version>
+        <Title>AppImage Manager</Title>
+        <Authors>MattEqualsCoder</Authors>
+        <PackageProjectUrl>https://github.com/MattEqualsCoder/AppImageManager</PackageProjectUrl>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <RepositoryUrl>https://github.com/MattEqualsCoder/AppImageManager</RepositoryUrl>
+        <RootNamespace>AppImageManager</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\LICENSE">
+            <Link>LICENSE</Link>
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+            <Pack>true</Pack>
+            <PackagePath></PackagePath>
+            <Visible>True</Visible>
+        </None>
+        <None Include="..\README.md">
+            <Link>README.md</Link>
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+            <Pack>true</Pack>
+            <PackagePath></PackagePath>
+            <Visible>True</Visible>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="ini-parser-netstandard" Version="2.5.3" />
+    </ItemGroup>
+
+</Project>

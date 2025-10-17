@@ -162,7 +162,7 @@ public static class AppImage
         appImageFilePath ??= Environment.GetEnvironmentVariable("APPIMAGE");
         if (string.IsNullOrEmpty(appImageFilePath) || !File.Exists(appImageFilePath))
         {
-            return false;
+            return true;
         }
 
         var desktopFilePath = GetDesktopFileName(GetDesktopFolder(), appId);

@@ -17,7 +17,7 @@ public static class AppImage
         return !string.IsNullOrEmpty(appImageFilePath) && File.Exists(appImageFilePath);
     }
 
-    public static async Task<DownloadAppImageResponse> Download(DownloadAppImageRequest request)
+    public static async Task<DownloadAppImageResponse> DownloadAsync(DownloadAppImageRequest request)
     {
         var appImageFilePath = request.AppImagePath;
         if (string.IsNullOrEmpty(appImageFilePath))

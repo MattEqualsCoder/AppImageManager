@@ -18,7 +18,7 @@ if (!AppImage.DoesDesktopFileExist("org.mattequalscoder.example"))
 
 ### Download app image and execute
 ```csharp
-var downloadResponse = await AppImage.Download(new DownloadAppImageRequest
+var downloadResponse = await AppImage.DownloadAsync(new DownloadAppImageRequest
 {
     Url = "https://github.com/MattEqualsCoder/ExampleProject/releases/download/v1.0.0/ExampleProject.x86_64.AppImage",
     AutoLaunch = true

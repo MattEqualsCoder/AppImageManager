@@ -35,7 +35,7 @@ else if (command == "download-app-image" && args.Length >= 3)
         return;
     }
     
-    var downloadResponse = await AppImage.Download(new DownloadAppImageRequest
+    var downloadResponse = await AppImage.DownloadAsync(new DownloadAppImageRequest
     {
         Url = downloadUrl,
         AppImagePath = appImagePath,

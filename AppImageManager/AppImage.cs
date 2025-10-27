@@ -380,7 +380,7 @@ public static class AppImage
         var primaryIcon = icons.OrderByDescending(x => x.Size).FirstOrDefault();
         if (primaryIcon != null)
         {
-            var primaryIconFileName = Path.GetFileNameWithoutExtension(pathData.AppId).Replace(".", "_");
+            var primaryIconFileName = pathData.AppId.Replace(".", "_");
             var extension = Path.GetExtension(primaryIcon.Path);
             var targetPrimaryIcon = Path.Combine(iconFolder, $"{primaryIconFileName}{extension}");
             File.Copy(primaryIcon.Path, targetPrimaryIcon, true);
